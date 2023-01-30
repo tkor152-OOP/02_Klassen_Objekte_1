@@ -4,22 +4,21 @@ public class App {
     
     public static void main(String[] args) {
 
-        // 1. Instanziierung class --> object / instance
         Cat cat = new Cat(); 
-        System.out.println(cat);
-        cat.tellYourAddress();
+        output("Blick von aussen: " + cat);
+        output(cat.tellYourAddress());
 
-        System.out.println("-------------------------");
+        output("-------------------------");
 
         Cat cat2 = new Cat();
-        System.out.println(cat2);
-        cat2.tellYourAddress();
+        output("Blick von aussen: " + cat2);
+        output(cat2.tellYourAddress());
 
     }
 
-  
-
-
+    public static void output(String outputStr) {
+        System.out.println(outputStr);
+    }
 
 }
 
