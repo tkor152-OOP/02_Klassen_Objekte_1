@@ -5,12 +5,30 @@ public class App {
     public static void main(String[] args) {
 
         Cat cat = new Cat(); 
+
+        cat.name = "Grizabella";
+        cat.furColor = "white";
+        cat.age = 29;
+
+        output(cat.name);
+        output(cat.furColor);
+        output(String.valueOf(cat.age));  // Typkonvertierung
+
         output("Blick von aussen: " + cat);
         output(cat.tellYourAddress());
 
         output("-------------------------");
 
         Cat cat2 = new Cat();
+
+        cat2.name = "Alonzo";
+        cat2.furColor = "grey";
+        cat2.age = 35;
+
+        output(cat2.name);
+        output(cat2.furColor);
+        output(String.valueOf(cat2.age));  // Typkonvertierung
+
         output("Blick von aussen: " + cat2);
         output(cat2.tellYourAddress());
 
