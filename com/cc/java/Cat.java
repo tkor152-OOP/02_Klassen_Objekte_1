@@ -12,6 +12,8 @@ public Cat(String name, String furColor, int age) {
     this.age = age;
   }
 
+
+
 public String getName() {
   return name;
 }
@@ -25,7 +27,10 @@ public String getFurColor() {
 }
 
 public void setFurColor(String furColor) {
-  this.furColor = furColor;
+  boolean permission = true;
+  if (permission) {
+    this.furColor = furColor;
+  }
 }
 
 public int getAge() {

@@ -10,6 +10,9 @@ public class App {
         output(cat.getFurColor());
         output(String.valueOf(cat.getAge()));  
 
+        cat.setFurColor("grey");
+        output(cat.getFurColor());
+
         output("-------------------------");
 
         Cat cat2 = new Cat("Alonzo", "grey", 35);
