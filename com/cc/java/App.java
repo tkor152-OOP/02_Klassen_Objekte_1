@@ -4,30 +4,22 @@ public class App {
     
     public static void main(String[] args) {
 
-        Cat cat = new Cat(); 
+        Cat cat = new Cat("Grizabella", "white", 29);
 
-        cat.name = "Grizabella";
-        cat.furColor = "white";
-        cat.age = 29;
-
-        output(cat.name);
-        output(cat.furColor);
-        output(String.valueOf(cat.age));  // Typkonvertierung
+        output(cat.tellYourName());
+        output(cat.tellYourFurColor());
+        output(String.valueOf(cat.tellYourAge()));  
 
         output("Blick von aussen: " + cat);
         output(cat.tellYourAddress());
 
         output("-------------------------");
 
-        Cat cat2 = new Cat();
+        Cat cat2 = new Cat("Alonzo", "grey", 35);
 
-        cat2.name = "Alonzo";
-        cat2.furColor = "grey";
-        cat2.age = 35;
-
-        output(cat2.name);
-        output(cat2.furColor);
-        output(String.valueOf(cat2.age));  // Typkonvertierung
+        output(cat2.tellYourName());
+        output(cat2.tellYourFurColor());
+        output(String.valueOf(cat2.tellYourAge())); 
 
         output("Blick von aussen: " + cat2);
         output(cat2.tellYourAddress());
