@@ -10,6 +10,7 @@ public class App {
         output(cat.getFurColor());
         output(String.valueOf(cat.getAge()));  
 
+
         cat.setFurColor("grey");
         output(cat.getFurColor());
 
